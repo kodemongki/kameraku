@@ -1,0 +1,8 @@
+/** $id: iwanj@users.sourceforge.net
+*/
+TARGET          kamerakulite.exe
+TARGETTYPE      exe
+CAPABILITY		UserEnvironment
+UID				0x100039CE 0x2004505E
+
+#include "kameraku.mmh"

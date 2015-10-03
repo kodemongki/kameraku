@@ -1,0 +1,50 @@
+/** $id: iwanj@users.sourceforge.net
+*/
+USERINCLUDE      .
+SYSTEMINCLUDE    \epoc32\include
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH        .
+SOURCE            kwikapp.cpp oglescam.cpp uipanel.cpp
+
+SOURCEPATH        .
+START RESOURCE    kameraku.rss
+HEADER
+TARGETPATH resource\apps
+END
+
+START BITMAP noise.mbm
+TARGETPATH private\2004505E
+SOURCE c8 noise.bmp
+END
+
+START BITMAP blob.mbm
+TARGETPATH private\2004505E
+SOURCE c24 natural.bmp thermal.bmp toon.bmp mono.bmp night.bmp edge.bmp negative.bmp custom.bmp
+END
+
+START BITMAP button.mbm
+TARGETPATH private\2004505E
+SOURCE c24 capture.bmp delete.bmp back.bmp exit.bmp
+END
+
+START BITMAP kodemongki.mbm
+TARGETPATH private\2004505E
+SOURCE c32a kodemongki_white.bmp
+END
+
+START RESOURCE    kameraku_reg.rss
+#ifdef WINSCW
+TARGETPATH 	  \private\10003a3f\apps
+#else
+TARGETPATH 	  \private\10003a3f\import\apps
+#endif
+END
+
+LIBRARY         euser.lib cone.lib avkon.lib eikcore.lib apparc.lib ws32.lib fbscli.lib gdi.lib efsrv.lib
+LIBRARY			ecam.lib imageconversion.lib bitmaptransforms.lib libEGL.lib libGLESv2.lib
+LIBRARY			commondialogs.lib aknnotify.lib apmime.lib apgrfx.lib

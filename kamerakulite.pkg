@@ -1,0 +1,18 @@
+;$id: iwanj@users.sourceforge.net
+;
+&EN
+#{"kameraku"},(0x2004505E),1,0,0
+%{"kodemongki"}
+:"kodemongki"
+[0x20022e6d], 0, 0, 0, {"S60ProductID"}
+
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\release\gcce\urel\kamerakulite.exe" - "!:\sys\bin\kameraku.exe"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\resource\apps\kameraku.rsc" - "!:\resource\apps\kameraku.rsc"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\resource\apps\kameraku.mif" - "!:\resource\apps\kameraku_aif.mif"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\private\10003a3f\import\apps\kameraku_reg.rsc" - "!:\private\10003a3f\import\apps\kameraku_reg.rsc"
+
+
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\private\2004505E\kodemongki.mbm" - "!:\private\2004505E\kodemongki.mbm"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\private\2004505E\noise.mbm" - "!:\private\2004505E\noise.mbm"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\private\2004505E\blob.mbm" - "!:\private\2004505E\blob.mbm"
+"\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\private\2004505E\button.mbm" - "!:\private\2004505E\button.mbm"

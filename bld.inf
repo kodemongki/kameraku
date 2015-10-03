@@ -1,0 +1,8 @@
+/** $id: iwanj@users.sourceforge.net
+*/
+PRJ_EXPORTS
+kameraku.mif	\nokia\devices\nokia_symbian3_sdk_v0.9\epoc32\data\z\resource\apps\kameraku.mif
+
+PRJ_MMPFILES
+kamerakulite.mmp
+kamerakupro.mmp

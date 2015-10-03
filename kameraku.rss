@@ -1,0 +1,53 @@
+/** $id: iwanj@users.sourceforge.net
+*/
+NAME kaku
+
+#include <eikon.rh>
+#include <appinfo.rh>
+#include <avkon.rsg>
+#include <appinfo.rh>
+#include <CommonDialogs.hrh>
+#include <CommonDialogs.rh>
+
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+RESOURCE TBUF r_default_document_name
+    {
+    buf="kameraku";
+    }
+
+RESOURCE EIK_APP_INFO
+    {
+	menubar = r_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+RESOURCE MENU_BAR r_menubar
+    {
+    }
+
+RESOURCE MEMORYSELECTIONDIALOG r_file_select_dialog
+{
+	locations =
+			{
+			LOCATION { root_path = "C:\\"; },
+			LOCATION { root_path = "E:\\"; },
+			LOCATION { root_path = "F:\\"; }
+			};
+}
+
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+{
+	short_caption = "kameraku";
+	caption_and_icon =
+	{
+		CAPTION_AND_ICON_INFO
+		{
+			caption = "kameraku";
+			number_of_icons = 1;
+			icon_file = "\\resource\\apps\\kameraku_aif.mif"; 
+		}
+	}; 
+}
